@@ -487,7 +487,7 @@ FMDBLogger *sqliteLogger;
     DDLogDebug(@"%@ #onStationaryChanged", TAG);
     stationaryLocation = location;
     
-    [postLocationTask add:location];
+//    [postLocationTask add:location];
     
     MAURConfig *config = [self getConfig];
     if ([config isDebugging]) {
@@ -514,7 +514,7 @@ FMDBLogger *sqliteLogger;
     DDLogDebug(@"%@ #onLocationChanged %@", TAG, location);
     stationaryLocation = nil;
     
-    [postLocationTask add:location];
+//    [postLocationTask add:location];
     
     MAURConfig *config = [self getConfig];
     if ([config isDebugging]) {
